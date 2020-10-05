@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "cross-env ANALYZE=true next build",
     "start": "next start",
     "postbuild": "next-on-netlify",
     "deploy": "yarn build && netlify deploy --prod"
@@ -20,6 +20,8 @@
     "react-dom": "16.13.1"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^9.5.3",
+    "cross-env": "^7.0.2",
     "netlify-cli": "^2.65.0",
     "next-on-netlify": "^2.5.1"
   }

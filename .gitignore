@@ -15,6 +15,11 @@
 # production
 /build
 
+# next-on-netlify
+.netlify
+/out_publish/
+/out_functions/
+
 # misc
 .DS_Store
 *.pem
